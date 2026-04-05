@@ -1,0 +1,15 @@
+{
+  "name": "turbo-tsc-reviewer",
+  "version": "1.0.0",
+  "description": "Monorepo-native PR Reviews for Turborepo TypeScript (TSC).",
+  "main": "dist/index.js",
+  "author": "Vinayaka Hebbar",
+  "license": "MIT",
+  "scripts": {
+    "build": "ncc build reviewer.js -o dist --minify --license LICENSE",
+    "test": "node reviewer.js"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.38.3"
+  }
+}
